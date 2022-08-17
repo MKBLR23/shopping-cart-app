@@ -1,38 +1,101 @@
 .App {
-  text-align: center;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.products {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-item {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 30%;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.product-thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-description-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-add-button {
+  padding: 5;
+  border: 0;
+  border-radius: 5px;
+  background-color: #06cd0d;
+  color: #fff;
+}
+
+.product-remove-button {
+  padding: 5;
+  border: 0;
+  border-radius: 5px;
+  background-color: #c70c09;
+  color: #fff;
+}
+
+.cart {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background: darkgray;
+  padding: 10px;
+}
+
+.cart-header {
+  font-size: 30;
+  align-self: center;
+}
+
+.cart-total {
+  font-size: 20;
+  align-self: center;
+}
+
+.cart-items {
+  display: flex;
+  padding: 10;
+  border: 1px solid #ccc;
+  margin: 5;
+  justify-content: space-between;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10;
+}
+
+.cart-icon {
+  width: 40px;
+  object-fit: cover;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.empty-products {
+  padding: 20;
+  align-self: center;
+}
+
+.cart-quantity {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 10;
 }
