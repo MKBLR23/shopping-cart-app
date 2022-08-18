@@ -31,7 +31,7 @@
 }
 
 .product-add-button {
-  padding: 5;
+  padding: 5px;
   border: 0;
   border-radius: 5px;
   background-color: #06cd0d;
@@ -39,7 +39,7 @@
 }
 
 .product-remove-button {
-  padding: 5;
+  padding: 5px;
   border: 0;
   border-radius: 5px;
   background-color: #c70c09;
@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: column;
   margin: 10px;
-  background: darkgray;
+  background: #ede8e8;
   padding: 10px;
 }
 
@@ -67,15 +67,15 @@
 
 .cart-items {
   display: flex;
-  padding: 10;
+  padding: 10px;
   border: 1px solid #ccc;
-  margin: 5;
+  margin: 5px;
   justify-content: space-between;
 }
 
 .cart-item {
   display: flex;
-  gap: 10;
+  gap: 10px;
 }
 
 .cart-icon {
@@ -90,12 +90,12 @@
 }
 
 .empty-products {
-  padding: 20;
+  padding: 20px;
   align-self: center;
 }
 
 .cart-quantity {
   display: flex;
   align-items: center;
-  gap: 10;
+  gap: 10px;
 }

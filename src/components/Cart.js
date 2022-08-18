@@ -5,7 +5,9 @@ const Cart = ({ state, dispatch }) => {
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    setTotal(cart.reduce((acc, curr) => acc + curr.price * curr.qty, 0));
+    setTotal(
+      cart.reduce((acc, curr) => acc + Number(curr.price) * curr.qty, 0)
+    );
   }, [cart]);
 
   const changeQuantity = (id, qty) => {
